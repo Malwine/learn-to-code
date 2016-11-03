@@ -47,9 +47,9 @@ Now head back to your console and run `bundle` in your folder. It will show you 
 Coach: Explain in 2 sentences how the Gemfile is helpful.
 
 ### The index.html file
-Now in the console create a new folder: `mkdir views`
-Go to the folder: `cd views`
-Create a new file called index.erb: `touch index.erb`
+Now in the console create a new folder: `mkdir views`  
+Go to the folder: `cd views`  
+Create a new file called index.erb: `touch index.erb`  
 
 `Hint: ERB stands for embedded Ruby, this means that we can write HTML that also has ruby code in it. If you want to create a normal website without Ruby then you would use the ending .html like so: index.html`
 
@@ -67,6 +67,7 @@ Have a look at the following lines:
 </html>
 ```
 **Special task:** Talk about what you think these lines will do.
+
 Open the file in your editor. Input these lines. Open the file in the browser. Check if your assumptions were right. We will talk more about this in Step 2.
 
 ### The name_generator.rb file
