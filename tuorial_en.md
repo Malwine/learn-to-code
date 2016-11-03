@@ -16,7 +16,7 @@ Requirements:
 
 Tools:
   - **Editor** of choice (Sublime, Atom, TextEdit etc.)
-  - Terminal or Rails Command Line **Console** (Windows)
+  - **Console**: Terminal or Rails Command Line (Windows)
   - **Browser** of choice: Firefox, Chrome, Edge, Safari etc.
 
 How you will go through this tutorial:
@@ -82,5 +82,5 @@ end
 
 ```
 
-In the console type `ruby name_generator.rb`. With this command we are starting our app on our computer. To see the app running we go to our browser and type as url: `localhost:4567`
+In the console type `ruby name_generator.rb`. With this command we are starting our app on our computer. To see the app running we go to our browser and type as url: `localhost:4567`  
 **Special task:** What has changed?
