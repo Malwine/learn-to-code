@@ -1,29 +1,4 @@
-# Learn to code
-
-This is an interactive tutorial to get started learning coding. While you will go through the tutorial you will discover different technologies and solve nice tasks.
-
-As an result you will have a cute app that generates your unicorn name.
-
-What you will get to know:
-  - HTML and CSS
-  - Ruby and Sinatra Framework
-  - How the internet works
-  - How to research technical questions
-
-Requirements:
-  - Ruby is installed
-  - Windows: Rails Console is installed
-
-Tools:
-  - **Editor** of choice (Sublime, Atom, TextEdit etc.)
-  - **Console**: Terminal or Rails Command Line (Windows)
-  - **Browser** of choice: Firefox, Chrome, Edge, Safari etc.
-
-How you will go through this tutorial:
-  - Ask questions anytime.
-  - Support your partners in the group.
-  - Try to research in the web.
-  - Read carefully before you copy and paste :)
+# Learn to code tutorial in English
 
 ## Step 1: Set up your project
 
@@ -32,7 +7,7 @@ We are going to create 3 files:
   - index.html
   - name_generator.rb
 
-We will set these files up and input a few lines. We check with every file if it works. Once we are done we will continue coding.
+We will set these files up and input a few lines in every file. We'll check with every file if it works. Once we are done we will continue coding and dive deeper.
 
 ### The Gemfile
 Create a new folder in the Console: `mkdir name-generator`
@@ -46,7 +21,7 @@ gem 'sinatra'
 Now head back to your console and run `bundle` in your folder. It will show you a few lines including `Bundle complete!`. If you see that: Perfect, you're done!
 Coach: Explain in 2 sentences how the Gemfile is helpful.
 
-### The index.html file
+### The frontend file
 Now in the console create a new folder: `mkdir views`  
 Go to the folder: `cd views`  
 Create a new file called index.erb: `touch index.erb`  
@@ -70,7 +45,7 @@ Have a look at the following lines:
 
 Open the file in your editor. Input these lines. Open the file in the browser. Check if your assumptions were right. We will talk more about this in Step 2.
 
-### The name_generator.rb file
+### The backend file
 
 Create a name_generator.rb file in the console with `touch name_generator.rb` and open it in your editor.
 Input the following lines of code:
