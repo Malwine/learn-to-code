@@ -9,9 +9,15 @@ We are going to create 3 files:
 
 We will set these files up and input a few lines in every file. We'll check with every file if it works. Once we are done we will continue coding and dive deeper.
 
+Before we start with these files we will create a new folder in the console: `mkdir name-generator`
+Then we go into this folder: `cd name-generator`
+
 ### The Gemfile
-Create a new folder in the Console: `mkdir name-generator`
-After that create a Gemfile: `touch Gemfile` after that open the Gemfile in your editor and input the following lines:
+
+A Gemfile is a file where we can tell which additional software we want to use. :warning:
+
+Create a Gemfile: `touch Gemfile`  
+After that open the Gemfile in your editor and input the following lines:
 ```
 # Gemfile
 source "https://rubygems.org"
