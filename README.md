@@ -6,14 +6,15 @@ This is an interactive tutorial to get started learning coding. While you will g
 
 **What you will get to know:**
   - HTML and CSS
-  - Ruby and Sinatra Framework
+  - [Ruby](http://tryruby.org) and [Sinatra](http://www.sinatrarb.com/) Framework
   - How the internet works
   - How to research technical questions
+  - How to handle errors
 
 **Requirements:**
   - Ruby is installed
   - Windows: Rails Console is installed
-  - [Installation-Guide](http://guides.railsgirls.com/install)
+  - [Use the RailsGirls Installation-Guide](http://guides.railsgirls.com/install)
 
 **Tools:**
   - **Editor** (of choice): Sublime, Atom, TextEdit etc.
@@ -25,7 +26,7 @@ This is an interactive tutorial to get started learning coding. While you will g
   - Support your partners in the group.
   - Try to research in the web.
   - Read carefully before you copy and paste :)
-  - Take breaks.
+  - Take many breaks.
 
 Now let's get started coding [here](/tutorial_en.md).
 
