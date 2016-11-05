@@ -4,6 +4,8 @@
 
 This is an interactive tutorial to get started learning coding. While you will go through the tutorial you will discover different technologies,  solve nice tasks and build your very own name generator app.
 
+![SCREENSHOT]()
+
 **What you will get to know:**
   - HTML and CSS
   - [Ruby](http://tryruby.org) and [Sinatra](http://www.sinatrarb.com/) Framework

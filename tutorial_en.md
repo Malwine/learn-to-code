@@ -82,6 +82,34 @@ end
 In the console type `ruby name_generator.rb`. With this command we are starting our app on our computer. To see the app running we go to our browser and type in the url bar: `localhost:4567`  
 
 ## Step 2: Making our app dynamic
+At the moment our app is still static. This means that our name generator doesn't generate a name. Everytime we reload we get the name "Fluffy Giggle". But we want it to be a random name. What can we do?
+
+You might have seen that in the backend file the name "Awesome Orange" is specified. Let's start by handing this name over to the front end.
+
+Go to the frontend file and instead of `<strong>Fluffy Giggle</strong>` input the following line:
+`<strong><%= name %></strong>`
+
+Reload the app in the browser. What changes do you see?
+
+"Ok, but that is not random!" you might say now...
+Well, let's make a first little randomizer. Read the following lines of code. What are your ideas what they do?
+
+``` ruby
+def choose_random_name
+  ["Exciting Eraser", "Sunny Beans", "Rainbow Trumpet"].sample
+end
+
+get '/' do
+  erb :index, :locals => { :name => choose_random_name }
+end
+```
+Once you discussed the code head over to the backend file in your editor.
+Add the code above. The code you see in the first 3 lines is called "method".
+
+The code below starting with `get '/' do` is always executed when we reload our app in the browser.
+Instead of "Awesome Orange" we want to "call" our method `choose_random_name` and it will give us a random name every time we reload the browser.
+
+Great! We get a random name on reload! PARTY! :tada:
 
 ## Step 3: How the internet works
 
