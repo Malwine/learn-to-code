@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  erb :index, :locals => { :name => "Fluffy Giggle" }
+  erb :index, :locals => { :name => "Awesome Orange" }
 end
