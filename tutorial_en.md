@@ -86,7 +86,7 @@ At the moment our app is still static. This means that our name generator doesn'
 
 You might have seen that in the backend file the name "Awesome Orange" is specified. Let's start by handing this name over to the front end.
 
-Go to the frontend file and instead of `<strong>Fluffy Giggle</strong>` input the following line:
+Go to the frontend file and instead of `<strong>Fluffy Giggle</strong>` input the following line:  
 `<strong><%= name %></strong>`
 
 Reload the app in the browser. What changes do you see?
@@ -113,9 +113,53 @@ Great! We get a random name on reload! PARTY! :tada:
 
 ## Step 3: How the internet works
 
+The Internet is a big network including many routers and computers, either clients or servers.
+Client computers are mostly our personal computers or work computers. Servers are also normal computers but they are available 24 hours and most of them are accessible to many people.
+![Clients and Servers make the internet](/pictures/internet.png)
+
+When we want to see a website, e.g. `http://railsgirlsberlin.de/` then we do a GET **request** to the server that stores the files for the website. The server responds with the content and sends it back to us. This is called a **response**. Then our browser interprets the files and renders the website.
+![request](/pictures/request.png)
+![request](/pictures/response.png)
+
+There are different types of requests. Today we will also learn about the POST request. The POST request enables us to send some data to the server, e.g. our name from an input field or our favorite color selected from a dropdown.
+
+**GET Request**
+
+In Sinatra, the web app framework we use, you defined what happened on a GET request by these lines:
+``` ruby
+get '/' do
+  erb :index, :locals => { :name => choose_random_name }
+end
+```
+Do you see the word "get" that starts the code block? Once our app receives a GET request all the code between `do` and `end` is executed. The index.erb file is send back and also a randomly chosen name.
+
+**POST Request**
+
+Now we would also like to send some data to our app. So we also need to implement a POST request code block.
+Discuss the following code block:
+``` ruby
+post '/' do
+  name = params[:first_name_input]
+
+  erb :index, :locals => { :first_name_input => params[:first_name_input],
+                           :name => name}
+end
+
+```
+
 ## Step 4: Adding more logic to the backend
+
+  - Receive the first name from input field
+  - get first letter of input
+  - get first name from map
+  - create name mixed from input and random last/name
 
 ## Step 5: Making our app look cool
 
+  - include a css file
+  - change background color
+  - center content
+  - use fancy font
 
 ## Step 5: Follow ups
+  - [Get your stuff online](https://speakerdeck.com/malwine/how-do-i-get-my-stuff-on-the-internet)

@@ -5,6 +5,12 @@
   </head>
   <body>
     <h1>Unicorn Name Generator</h1>
+
+    <form action = "/" method = "POST">
+      <input type="text" name="first_name_input" value="<%= first_name_input %>">
+      <button>Submit</button>
+    </form>
+
     <p>Your name is:<p>
     <strong><%= name %></strong>
   </body>
