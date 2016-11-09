@@ -1,5 +1,7 @@
 # Learn to code
 
+:warning: The tutorial is currently work in progress.
+
 ## For Learners
 
 This is an interactive tutorial to get started learning coding. While you will go through the tutorial you will discover different technologies,  solve nice tasks and build your very own name generator app.
