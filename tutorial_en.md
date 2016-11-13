@@ -206,10 +206,7 @@ Now we need to tell our frontend file to use this style sheet. Input between the
 
 ``` html
 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 ```
-
-The line below says that we will also use styles from [Bootstrap](https://getbootstrap.com/).
 
 In our `stylesheet.css` input some style like these:
 ``` css
