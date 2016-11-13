@@ -1,0 +1,24 @@
+body {
+  background-color: #ffe066;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.nice-button {
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.new-name {
+  font-size: 3em;
+}

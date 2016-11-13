@@ -115,51 +115,136 @@ Great! We get a random name on reload! PARTY! :tada:
 
 The Internet is a big network including many routers and computers, either clients or servers.
 Client computers are mostly our personal computers or work computers. Servers are also normal computers but they are available 24 hours and most of them are accessible to many people.
+
 ![Clients and Servers make the internet](/pictures/internet.png)
 
 When we want to see a website, e.g. `http://railsgirlsberlin.de/` then we do a GET **request** to the server that stores the files for the website. The server responds with the content and sends it back to us. This is called a **response**. Then our browser interprets the files and renders the website.
+
 ![request](/pictures/request.png)
 ![request](/pictures/response.png)
 
-There are different types of requests. Today we will also learn about the POST request. The POST request enables us to send some data to the server, e.g. our name from an input field or our favorite color selected from a dropdown.
+#### Requests
+
+There are different types of requests. Today we will also learn about the GET and the POST request.
 
 **GET Request**
 
-In Sinatra, the web app framework we use, you defined what happened on a GET request by these lines:
+In Sinatra, the web app framework we use, we defined what happens when somebody sends us a GET request by these lines:
 ``` ruby
 get '/' do
   erb :index, :locals => { :name => choose_random_name }
 end
 ```
-Do you see the word "get" that starts the code block? Once our app receives a GET request all the code between `do` and `end` is executed. The index.erb file is send back and also a randomly chosen name.
+Do you see the word "get" that starts the code block? Once our app receives a GET request all the code between `do` and `end` is executed. So what happens? The index.erb file is send back to the client and also a randomly chosen name.
 
 **POST Request**
 
-Now we would also like to send some data to our app. So we also need to implement a POST request code block.
+The POST request enables us to send some data to the server, e.g. our name from an input field or our favorite color selected from a dropdown.
+
+So before we define our POST request we create an input field in our frontend file. Below our `<h1>` headline element we can input the following code:
+
+``` html
+<form action = "/" method = "POST">
+  <input type="text" name="first_name_input" value="<%= first_name_input %>">
+  <button>Submit</button>
+</form>
+
+<p>Your name is:<p>
+<strong><%= name %></strong>
+```
+
+Check in the browser if you can see an input field and a button.
+Once we did that we want to let our app receive the data from the text input.
+
 Discuss the following code block:
 ``` ruby
 post '/' do
   name = params[:first_name_input]
 
   erb :index, :locals => { :first_name_input => params[:first_name_input],
-                           :name => name}
+                           :name => name }
 end
-
 ```
+
+This is how we define what happens when somebody sends us data through the form with a POST request.
+With `params[]` we get the name from our form and save it in a variable called `name`.
 
 ## Step 4: Adding more logic to the backend
 
-  - Receive the first name from input field
-  - get first letter of input
-  - get first name from map
-  - create name mixed from input and random last/name
+Now that we receive the first name though an input field we can add more logic to our name generator.
+In our app we want to create a funny new name for a person.
+
+Read the following code line by line and discuss what it would do. Your coach will help you explain what it does.
+
+``` ruby
+def pick_name(name)
+  name_hash = { 'a' => 'Amazing',
+                'b' => 'Best',
+                'c' => 'Cute',
+                'm' => 'Magnificent'}
+
+  first_letter = name[0].downcase
+
+  if (name_hash.has_key?(first_letter))
+    name_hash[first_letter] + " " + name.capitalize
+  else
+    "Super" + " " + name.capitalize
+  end
+end
+```
+Input these code lines below your `choose_random_name` method. After that we also need to call our method.
+We do that in our POST request block: replace `:name => name` with `:name => pick_name(name)`
+
+Extra task: You can adjust the `name_hash` to include all the letters you want to cover.
 
 ## Step 5: Making our app look cool
 
-  - include a css file
-  - change background color
-  - center content
-  - use fancy font
+Now we want to give our app a cool look! Therefore, we create a new special file where we will input our styling.
+Create a new folder `css` and a new file in it called `stylesheet.css`.
+
+Now we need to tell our frontend file to use this style sheet. Input between the `<head>` tags the following lines:
+
+``` html
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+```
+
+The line below says that we will also use styles from [Bootstrap](https://getbootstrap.com/).
+
+In our `stylesheet.css` input some style like these:
+``` css
+body {
+  background-color: #ffe066;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.nice-button {
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.new-name {
+  font-size: 3em;
+}
+
+```
+
+There are many things you can do with CSS! Style the app like you wish. Try out other colors or font sizes.
+You can find more inspiration here:
+  - [Input Forms](http://www.w3schools.com/css/css_form.asp)
+  - [Color Picker](http://www.w3schools.com/colors/colors_picker.asp)
 
 ## Step 5: Follow ups
   - [Get your stuff online](https://speakerdeck.com/malwine/how-do-i-get-my-stuff-on-the-internet)
+  - https://learnxinyminutes.com/docs/ruby/
