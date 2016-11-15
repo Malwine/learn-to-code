@@ -68,9 +68,17 @@ Have a look at the following lines. Talk about what you think these lines will d
 </html>
 ```
 
-Once you talked about it head over into the console and create a new folder: `mkdir views`  
-Navigate to the folder: `cd views`  
-Create a new file called index.erb: `touch index.erb`  
+Once you talked about it head over into the console and create a new folder: 
+
+    mkdir views
+
+Navigate to the folder:
+
+    cd views
+
+Create a new file called index.erb:
+
+    touch index.erb
 
 Open the file in your editor. Open the file in the browser. Check if your assumptions were right.
 
