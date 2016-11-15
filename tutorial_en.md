@@ -13,8 +13,13 @@ Contents:
 
 ## Step 1: Set up your project
 
-At first create a new folder in the console: `mkdir name-generator`  
-Then we navigate into this folder: `cd name-generator`
+At first create a new folder in the console:
+
+    mkdir name-generator
+    
+Then we navigate into this folder:
+
+    cd name-generator
 
 In this folder we will create 3 files for a start:
   - Gemfile
@@ -27,7 +32,10 @@ We will set these files up and input a few lines in every file. We'll check with
 
 The first file we create is the Gemfile. You can imagine it as a toolbox where we can specify which additional software we want to use. In our case we want to use the web application framework Sinatra.
 
-Create a Gemfile: `touch Gemfile`  
+Create a Gemfile in the console:
+
+    touch Gemfile
+
 After that open the Gemfile in your editor and input the following lines:
 ```
 # Gemfile
