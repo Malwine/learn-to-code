@@ -82,7 +82,7 @@ Create a new file called index.erb:
 
 Open the file in your editor. Open the file in the browser. Check if your assumptions were right.
 
-`Hint: the file ending .ERB stands for embedded Ruby, this means that we can write HTML code which includes ruby code in it. If you want to create a normal website without Ruby then you would use the ending .html like so: index.html We will learn more about how we can embed Ruby in Step 2.`
+*Hint: the file ending .ERB stands for embedded Ruby, this means that we can write HTML code which includes ruby code in it. If you want to create a normal website without Ruby then you would use the ending .html like so: index.html We will learn more about how we can embed Ruby in Step 2.*
 
 ### The backend file
 
