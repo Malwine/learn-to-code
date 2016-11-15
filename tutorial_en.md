@@ -72,13 +72,9 @@ Once you talked about it head over into the console and create a new folder:
 
     mkdir views
 
-Navigate to the folder:
+Create a new file called index.erb in the views folder like the following:
 
-    cd views
-
-Create a new file called index.erb:
-
-    touch index.erb
+    touch views/index.erb
 
 Open the file in your editor. Open the file in the browser. :warning:  Check if your assumptions were right.
 
