@@ -12,10 +12,10 @@ def pick_name(name)
 
   first_letter = name[0].downcase
 
-  if (name_hash.has_key?(first_letter))
+  if name_hash.has_key?(first_letter)
     name_hash[first_letter] + " " + choose_random_name
   else
-    "Super" + " " + name.capitalize
+    "Super #{name.capitalize}"
   end
 end
 

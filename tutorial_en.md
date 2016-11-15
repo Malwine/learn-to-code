@@ -16,7 +16,7 @@ Contents:
 At first create a new folder in the console and name it as you like e.g. "namegenerator":
 
     mkdir namegenerator
-    
+
 Then we navigate into this folder:
 
     cd namegenerator
@@ -43,7 +43,7 @@ source "https://rubygems.org"
 
 gem 'sinatra'
 ```
-Now head back to your console and run 
+Now head back to your console and run
 
     bundle
 
@@ -68,7 +68,7 @@ Have a look at the following lines. Talk about what you think these lines will d
 </html>
 ```
 
-Once you talked about it head over into the console and create a new folder: 
+Once you talked about it head over into the console and create a new folder:
 
     mkdir views
 
@@ -205,10 +205,10 @@ def pick_name(name)
 
   first_letter = name[0].downcase
 
-  if (name_hash.has_key?(first_letter))
-    name_hash[first_letter] + " " + name.capitalize
+  if name_hash.has_key?(first_letter)
+    name_hash[first_letter] + " " + choose_random_name
   else
-    "Super" + " " + name.capitalize
+    "Super #{name.capitalize}"
   end
 end
 ```
