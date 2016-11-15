@@ -1,6 +1,6 @@
 # Learn to code
 
-:warning: The tutorial is currently work in progress.
+:warning: The tutorial is still work in progress.
 
 ## For Learners
 
@@ -32,7 +32,7 @@ This is an interactive tutorial to get started learning coding. While you will g
   - Read carefully before you copy and paste :)
   - Take many breaks.
 
-Now let's get started coding [here](/tutorial_en.md).
+:sparkles: :sparkles: :sparkles: Now let's get started coding [here](/tutorial_en.md). :sparkles: :sparkles: :sparkles:
 
 ---
 
