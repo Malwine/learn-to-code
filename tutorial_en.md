@@ -37,13 +37,17 @@ Create a Gemfile in the console:
     touch Gemfile
 
 After that open the Gemfile in your editor and input the following lines:
-```
+``` ruby
 # Gemfile
 source "https://rubygems.org"
 
 gem 'sinatra'
 ```
-Now head back to your console and run `bundle` in your folder. It will show you a few lines including `Bundle complete!`. If you see that: Perfect, you're done!
+Now head back to your console and run 
+
+    bundle
+
+in your folder. It will show you a few lines including `Bundle complete!`. If you see that: Perfect, you're done!
 
 ### The frontend file
 
@@ -58,7 +62,7 @@ Have a look at the following lines. Talk about what you think these lines will d
   </head>
   <body>
     <h1>Unicorn Name Generator</h1>
-    <p>Your name is:<p>
+    <p>Your name is:</p>
     <strong>Fluffy Giggle</strong>
   </body>
 </html>
