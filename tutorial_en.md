@@ -13,13 +13,13 @@ Contents:
 
 ## Step 1: Set up your project
 
-At first create a new folder in the console:
+At first create a new folder in the console and name it as you like e.g. "namegenerator":
 
-    mkdir name-generator
+    mkdir namegenerator
     
 Then we navigate into this folder:
 
-    cd name-generator
+    cd namegenerator
 
 In this folder we will create 3 files for a start:
   - Gemfile
