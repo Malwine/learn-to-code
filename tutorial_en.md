@@ -84,7 +84,11 @@ Open the file in your editor. Open the file in the browser. :warning:  Check if 
 
 The backend file contains Ruby code which is our logic part of the app. It will make our app 'react' to our input.
 
-Create the backend file in the console with `touch name_generator.rb` and open it in your editor.
+Create the backend file in the console with 
+
+    touch name_generator.rb
+
+and open it in your editor.
 Input the following lines of code:
 ``` ruby
 require 'sinatra'
@@ -95,7 +99,11 @@ end
 
 ```
 
-In the console type `ruby name_generator.rb`. With this command we are starting our app on our computer. To see the app running we go to our browser and type in the url bar: `localhost:4567`  
+In the console type 
+
+    ruby name_generator.rb
+
+With this command we are starting our app on our computer. To see the app running we go to our browser and type in the url bar: [localhost:4567](http://localhost:4567/).
 
 ## Step 2: Making our app dynamic
 At the moment our app is still static. This means that our name generator doesn't generate a name. Everytime we reload we get the name "Fluffy Giggle". But we want it to be a random name. What can we do?
