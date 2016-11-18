@@ -19,6 +19,7 @@ This is an interactive tutorial to get started learning coding. While you will g
   - Ruby is installed
   - Windows: Rails Console is installed
   - [Use the RailsGirls Installation-Guide](http://guides.railsgirls.com/install)
+  - [Get to know the tools tutorial](http://railsgirlsberlin.github.io/basic-curriculum/terminal.html)
 
 **Tools:**
   - **Editor** (of choice): Sublime, Atom, TextEdit etc.
