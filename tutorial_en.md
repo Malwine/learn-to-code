@@ -120,6 +120,9 @@ input the following line:
 
 Reload the app in the browser. What changes do you see? Take a few minutes to discuss and ask questions.
 
+We exchanged the words "Fluffy Giggle" by Ruby code. All code bewteen these signs `<%= %>` will be Ruby code.
+In our case that is a variable calles `name`. From the backend we send data that is saved in the `name` variable and then the frontend shows us what data we have stored in `name`. We specified in the backend that it is "Awesome Orange".
+
 ---
 
 🤔 "Ok, but that is not random!" you might say now...
