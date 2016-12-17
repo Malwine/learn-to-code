@@ -184,7 +184,7 @@ So before we define our POST request we create an input field in our frontend fi
 
 ``` html
 <form action = "/" method = "POST">
-  <input type="text" value="<%= first_name_input %>">
+  <input type="text" name="first_name_input" value="<%= first_name_input %>">
   <button>Submit</button>
 </form>
 
