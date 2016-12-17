@@ -110,12 +110,19 @@ At the moment our app is still static. This means that our name generator doesn'
 
 You might have seen that in the backend file the name "Awesome Orange" is specified. Let's start by handing this name over to the front end.
 
-Go to the frontend file and instead of `<strong>Fluffy Giggle</strong>` input the following line:  
-`<strong><%= name %></strong>`
+Go to the frontend file and instead of 
+    
+    <strong>Fluffy Giggle</strong>
 
-Reload the app in the browser. What changes do you see?
+input the following line:
 
-"Ok, but that is not random!" you might say now...
+    <strong><%= name %></strong>
+
+Reload the app in the browser. What changes do you see? Take a few minutes to discuss and ask questions.
+
+---
+
+🤔 "Ok, but that is not random!" you might say now...
 Well, let's make a first little randomizer. Read the following lines of code. What are your ideas what they do?
 
 ``` ruby
