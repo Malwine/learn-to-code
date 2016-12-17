@@ -141,7 +141,12 @@ Once you discussed the code head over to the backend file in your editor.
 Add the code above. The code you see in the first 3 lines is called "method".
 
 The code below starting with `get '/' do` is always executed when we reload our app in the browser.
-Instead of "Awesome Orange" we want to "call" our method `choose_random_name` and it will give us a random name every time we reload the browser.
+Instead of "Awesome Orange" we want to "call" our method `choose_random_name` and it will give us a random name every time we reload the browser. 
+
+**Restarting the program**
+Sometimes if changes are made to the backend file we have to restart the program. You need to head into your console and stop the running program with pressing the keys Ctrl-C and the you need to start the programm again with
+
+    ruby name_generator.rb
 
 Great! We get a random name on reload! PARTY! :tada:
 
