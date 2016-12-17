@@ -130,7 +130,7 @@ Well, let's make a first little randomizer. Read the following lines of code. Wh
 
 ``` ruby
 def choose_random_name
-  ["Exciting Eraser", "Sunny Beans", "Rainbow Trumpet"].sample
+  ["Exciting Eraser", "Sunny Beans", "Rainbow Glitter"].sample
 end
 
 get '/' do
