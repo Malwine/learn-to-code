@@ -184,7 +184,7 @@ So before we define our POST request we create an input field in our frontend fi
 
 ``` html
 <form action = "/" method = "POST">
-  <input type="text" name="first_name_input" value="<%= first_name_input %>">
+  <input type="text" value="<%= first_name_input %>">
   <button>Submit</button>
 </form>
 
@@ -192,11 +192,14 @@ So before we define our POST request we create an input field in our frontend fi
 <strong><%= name %></strong>
 ```
 
-Check in the browser if you can see an input field and a button.
-Once we did that we want to let our app receive the data from the text input.
+Now before we have a look at the result we need to adjust our backend file too:
 
-Discuss the following code block:
 ``` ruby
+
+get '/' do
+  erb :index, :locals => { :first_name_input => params[:first_name_input], :name => choose_random_name }
+end
+
 post '/' do
   name = params[:first_name_input]
 
@@ -204,6 +207,10 @@ post '/' do
                            :name => name }
 end
 ```
+Again you need to head to the console and stop & start the backend program again.
+
+After that check in the browser if you can see an input field and a button.
+Once we did that we want to let our app receive the data from the text input.
 
 This is how we define what happens when somebody sends us data through the form with a POST request.
 With `params[]` we get the name from our form and save it in a variable called `name`.
