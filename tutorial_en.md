@@ -239,9 +239,16 @@ def pick_name(name)
 end
 ```
 Input these code lines below your `choose_random_name` method. After that we also need to call our method.
-We do that in our POST request block: replace `:name => name` with `:name => pick_name(name)`
+We do that in our POST request block: replace 
 
-Extra task: You can adjust the `name_hash` to include all the letters you want to cover.
+    :name => name
+with
+
+    :name => pick_name(name)
+
+Extra task: Adjust the `name_hash` to include all the letters you want to cover.
+After you added extra letters in your hash - take time to ask more questions.
+
 
 ## Step 5: Making our app look cool
 
