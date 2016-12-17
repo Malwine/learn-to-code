@@ -246,20 +246,13 @@ with
 
     :name => pick_name(name)
 
-Extra task: Adjust the `name_hash` to include all the letters you want to cover.
-After you added extra letters in your hash - take time to ask more questions.
+Extra task: Adjust the `name_hash` to include all the letters you want to cover. After you added extra letters in your hash - take time to ask more questions. 
 
+Then restart the program and have a look in the browser for the changes.
 
 ## Step 5: Making our app look cool
 
-Now we want to give our app a cool look! Therefore, we create a new special file where we will input our styling.
-Create a new folder `css` and a new file in it called `stylesheet.css`.
-
-Now we need to tell our frontend file to use this style sheet. Input between the `<head>` tags the following lines:
-
-``` html
-<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-```
+Now we want to give our app a cool look! Therefore, we create a new special file where we will input our styling. Stop the running program in your console. In our editor we now create a new folder `public` and a new file in it called `stylesheet.css`.
 
 In our `stylesheet.css` input some style like these:
 ``` css
@@ -289,6 +282,13 @@ input[type=text] {
 }
 
 ```
+
+Now we need to tell our frontend file to use this style sheet. Input between the `<head>` tags the following lines:
+
+``` html
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+```
+Restart the program and have a look how nice the generator now looks ;)
 
 There are many things you can do with CSS! Style the app like you wish. Try out other colors or font sizes.
 You can find more inspiration here:
