@@ -84,7 +84,7 @@ Open the file in your editor. Then input the code lines above. We will check in 
 
 The backend file contains Ruby code which is our logic part of the app. It will make our app 'react' to our input.
 
-Create the backend file in the console with 
+Create the backend file in the console with
 
     touch name_generator.rb
 
@@ -99,7 +99,7 @@ end
 
 ```
 
-In the console type 
+In the console type
 
     ruby name_generator.rb
 
@@ -110,8 +110,8 @@ At the moment our app is still static. This means that our name generator doesn'
 
 You might have seen that in the backend file the name "Awesome Orange" is specified. Let's start by handing this name over to the front end.
 
-Go to the frontend file and instead of 
-    
+Go to the frontend file and instead of
+
     <strong>Fluffy Giggle</strong>
 
 input the following line:
@@ -120,8 +120,8 @@ input the following line:
 
 Reload the app in the browser. What changes do you see? Take a few minutes to discuss and ask questions.
 
-We exchanged the words "Fluffy Giggle" by Ruby code. All code bewteen these signs `<%= %>` will be Ruby code.
-In our case that is a variable calles `name`. From the backend we send data that is saved in the `name` variable and then the frontend shows us what data we have stored in `name`. We specified in the backend that it is "Awesome Orange".
+We exchanged the words "Fluffy Giggle" by Ruby code. All code between these signs `<%= %>` will be Ruby code.
+In our case that is a variable called `name`. From the backend we send data that is saved in the `name` variable and then the frontend shows us what data we have stored in `name`. We specified in the backend that it is "Awesome Orange".
 
 ---
 
@@ -138,10 +138,10 @@ get '/' do
 end
 ```
 Once you discussed the code head over to the backend file in your editor.
-Add the code above. The code you see in the first 3 lines is called "method".
+Add the code above. The code you see in the first 3 lines is called a "method".
 
 The code below starting with `get '/' do` is always executed when we reload our app in the browser.
-Instead of "Awesome Orange" we want to "call" our method `choose_random_name` and it will give us a random name every time we reload the browser. 
+Instead of "Awesome Orange" we want to "call" our method `choose_random_name` and it will give us a random name every time we reload the browser.
 
 **Restarting the program**
 Sometimes if changes are made to the backend file we have to restart the program. You need to head into your console and stop the running program with pressing the keys Ctrl-C and the you need to start the programm again with
@@ -239,14 +239,14 @@ def pick_name(name)
 end
 ```
 Input these code lines below your `choose_random_name` method. After that we also need to call our method.
-We do that in our POST request block: replace 
+We do that in our POST request block: replace
 
     :name => name
 with
 
     :name => pick_name(name)
 
-Extra task: Adjust the `name_hash` to include all the letters you want to cover. After you added extra letters in your hash - take time to ask more questions. 
+Extra task: Adjust the `name_hash` to include all the letters you want to cover. After you added extra letters in your hash - take time to ask more questions.
 
 Then restart the program and have a look in the browser for the changes.
 
