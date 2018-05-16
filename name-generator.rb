@@ -20,7 +20,8 @@ def pick_name(name)
 end
 
 get '/' do
-  erb :index, :locals => { :first_name_input => params[:first_name_input], :name => choose_random_name }
+  erb :index, :locals => { :first_name_input => params[:first_name_input],
+                           :name => choose_random_name }
 end
 
 post '/' do
